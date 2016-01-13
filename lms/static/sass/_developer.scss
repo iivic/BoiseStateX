@@ -221,3 +221,62 @@
     }
   }
 }
+
+
+// ----custom
+
+.wrapper-logo img {
+    height: auto;
+    width: 210px;
+}
+header.global h1.logo img {
+	position: relative;
+    width: 220px;
+    top: -8px;
+}
+
+#global-navigation {
+	background-image: url("../images/default-theme/header-bg.jpg");
+	background-size: contain;
+}
+.home>header {
+	background: url("../images/default-theme/body-bg.jpg") no-repeat center;
+}
+
+header.global .nav-global li a{
+	color: #fff;
+}
+.wrapper.wrapper-footer{
+	background: url("../images/default-theme/footer-bg.jpg");
+}
+.content-wrapper{
+	min-height: 500px;
+}
+.container.about{
+	width: 800px;
+}
+.container.about h1{
+	text-align: left;
+}
+.container.about p{
+	font-family: "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+}
+.home > header .title{
+  opacity: 0.92;
+}
+// Header in course preview
+header.global .primary > a{
+	text-shadow: none;
+	color: #929292;
+}
+header.global.slim h1.logo img {
+    height: auto !important;
+    width: 180px;
+}
+header.global.slim h2{
+	color: white !important;
+	text-shadow: none !important;
+}
+header.global.slim h2 .provider{
+	color: #ea7832;
+}

@@ -23,6 +23,8 @@ from microsite_configuration import microsite
 from edxmako.shortcuts import marketing_link
 from branding.models import BrandingApiConfig
 
+import datetime
+
 
 log = logging.getLogger("edx.footer")
 
@@ -117,12 +119,18 @@ def _footer_copyright():
 
     # Translators: 'EdX', 'edX', and 'Open edX' are trademarks of 'edX Inc.'.
     # Please do not translate any of these trademarks and company names.
+    """
     return _(
-        u"\u00A9 {org_name}.  All rights reserved except where noted.  "
-        u"EdX, Open edX and the edX and Open EdX logos are registered trademarks "
+       u"\u00A9 {org_name}.  All rights reserved except where noted.  "
+       u"EdX, Open edX and the edX and Open EdX logos are registered trademarks "
         u"or trademarks of edX Inc."
     ).format(org_name=org_name)
+    """
+    currentYear = datetime.date.today().year
 
+    return _(
+       u"\u00A9 {currentYear} Boise State University 1910 University Dr., Boise, ID 83725 (208) 426-1000"
+    ).format(currentYear=currentYear)
 
 def _footer_openedx_link():
     """Return the image link for "powered by OpenEdX".

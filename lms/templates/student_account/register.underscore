@@ -70,3 +70,8 @@
     </div>
     <button class="nav-btn form-toggle" data-type="login"><%- gettext("Sign in") %></button>
 </div>
+<script>
+        $("#register-honor_code").attr("checked", "true");
+        $(".form-field.checkbox-honor_code").css("visibility", "hidden");
+        $(".form-field.checkbox-honor_code").css("height", "0");
+</script>
